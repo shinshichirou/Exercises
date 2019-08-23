@@ -16,6 +16,7 @@ class SetTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        bulletView.circleIt()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

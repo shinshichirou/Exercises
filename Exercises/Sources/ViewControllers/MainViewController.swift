@@ -26,11 +26,27 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         registerHeader()
         
-        viewModel.updateCompletion = { [weak self] in
+
+        viewModel.inserRowCallback = { [weak self] (indexPath) in
             main {
-                self?.tableView.reloadData()
+                self?.tableView.insertRows(at: [indexPath], with: .automatic)
+                self?.tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
             }
         }
+        
+        viewModel.insertSectionCallback = { [weak self] in
+            guard let sectionsCount = self?.viewModel.numberOfSections() else {
+                return
+            }
+            let lastSection = sectionsCount - 1
+            let indexSet = IndexSet(integer: lastSection)
+            let sectionIndexPath = IndexPath(row: NSNotFound, section: lastSection)
+            main {
+                self?.tableView.insertSections(indexSet, with: .automatic)
+                self?.tableView.scrollToRow(at: sectionIndexPath, at: .bottom, animated: true)
+            }
+        }
+        
         
     }
     

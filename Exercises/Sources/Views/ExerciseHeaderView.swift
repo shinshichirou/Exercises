@@ -24,4 +24,5 @@ class ExerciseHeaderView: UITableViewHeaderFooterView {
     @IBAction func addSetPressed(_ sender: Any) {
         delegate?.addSetFor(section)
     }
+    
 }

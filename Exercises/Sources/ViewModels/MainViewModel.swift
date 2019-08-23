@@ -10,7 +10,8 @@ import UIKit
 
 class MainViewModel {
     
-    var updateCompletion: Callback?
+    var inserRowCallback: ((IndexPath) -> Void)?
+    var insertSectionCallback: Callback?
     
     func numberOfSections() -> Int {
         return Storage.exercises().count
@@ -50,7 +51,7 @@ class MainViewModel {
             if let err = error {
                 print(err)
             }
-            self.updateCompletion?()
+            self.insertSectionCallback?()
         }
     }
     
@@ -64,7 +65,8 @@ extension MainViewModel: ExerciseHeaderViewDelegate {
             if let err = error {
                 print(err)
             }
-            self.updateCompletion?()
+            self.inserRowCallback?(IndexPath(row: exercise.sets.count-1,
+                                             section: section))
         }
     }
 }
