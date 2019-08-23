@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="24J-RQ-vgH" customClass="AddSetView" customModule="Exercises" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiJ-gy-EZy">
+                    <rect key="frame" x="16" y="16" width="208" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEu-RX-oQl">
+                    <rect key="frame" x="169" y="114" width="55" height="30"/>
+                    <state key="normal" title="Add Set"/>
+                    <connections>
+                        <action selector="addPressed:" destination="24J-RQ-vgH" eventType="touchUpInside" id="jUa-2R-Fbv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-0p-9yy">
+                    <rect key="frame" x="16" y="114" width="48" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelPressed:" destination="24J-RQ-vgH" eventType="touchUpInside" id="4sh-7k-Ho6"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GF7-ZL-LUM">
+                    <rect key="frame" x="16" y="52.5" width="208" height="29"/>
+                    <segments>
+                        <segment title="Regular"/>
+                        <segment title="Warm-up"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tEu-RX-oQl" secondAttribute="bottom" constant="16" id="5pX-Au-Cbf"/>
+                <constraint firstItem="tEu-RX-oQl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Te4-0p-9yy" secondAttribute="trailing" constant="16" id="5sC-GP-dek"/>
+                <constraint firstAttribute="bottom" secondItem="Te4-0p-9yy" secondAttribute="bottom" constant="16" id="95p-q9-p6I"/>
+                <constraint firstItem="XnM-Il-aEG" firstAttribute="trailing" secondItem="GF7-ZL-LUM" secondAttribute="trailing" constant="16" id="Q2k-1I-iA3"/>
+                <constraint firstItem="Te4-0p-9yy" firstAttribute="leading" secondItem="XnM-Il-aEG" secondAttribute="leading" constant="16" id="W9Q-sJ-kQN"/>
+                <constraint firstItem="GF7-ZL-LUM" firstAttribute="leading" secondItem="XnM-Il-aEG" secondAttribute="leading" constant="16" id="XZG-GX-yzk"/>
+                <constraint firstAttribute="trailing" secondItem="hiJ-gy-EZy" secondAttribute="trailing" constant="16" id="dne-kU-uIL"/>
+                <constraint firstItem="XnM-Il-aEG" firstAttribute="trailing" secondItem="tEu-RX-oQl" secondAttribute="trailing" constant="16" id="gYR-hA-yHD"/>
+                <constraint firstItem="Te4-0p-9yy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GF7-ZL-LUM" secondAttribute="bottom" constant="16" id="kAn-Ic-rjo"/>
+                <constraint firstItem="GF7-ZL-LUM" firstAttribute="top" secondItem="hiJ-gy-EZy" secondAttribute="bottom" constant="16" id="n8i-Cw-sYg"/>
+                <constraint firstItem="tEu-RX-oQl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GF7-ZL-LUM" secondAttribute="bottom" constant="16" id="nmb-Dg-fFb"/>
+                <constraint firstItem="hiJ-gy-EZy" firstAttribute="leading" secondItem="24J-RQ-vgH" secondAttribute="leading" constant="16" id="w1J-sn-5tP"/>
+                <constraint firstItem="hiJ-gy-EZy" firstAttribute="top" secondItem="24J-RQ-vgH" secondAttribute="top" constant="16" id="zc6-V0-mjZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="XnM-Il-aEG"/>
+            <connections>
+                <outlet property="titleLabel" destination="hiJ-gy-EZy" id="Kok-wl-PaF"/>
+                <outlet property="typeControl" destination="GF7-ZL-LUM" id="y5p-lA-Cnx"/>
+            </connections>
+            <point key="canvasLocation" x="-160" y="-465.96701649175418"/>
+        </view>
+    </objects>
+</document>

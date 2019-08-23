@@ -18,19 +18,21 @@ class MainViewController: UIViewController {
     }
     @IBOutlet weak var addButton: UIBarButtonItem!
     
+    var fadeView: UIView?
+    
     let viewModel = MainViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        viewModel.mainViewController = self
         registerHeader()
-        
-
+    
         viewModel.inserRowCallback = { [weak self] (indexPath) in
             main {
                 self?.tableView.insertRows(at: [indexPath], with: .automatic)
-                self?.tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
+                self?.tableView.scrollToRow(at: indexPath, at: .none, animated: true)
             }
         }
         
@@ -46,7 +48,6 @@ class MainViewController: UIViewController {
                 self?.tableView.scrollToRow(at: sectionIndexPath, at: .bottom, animated: true)
             }
         }
-        
         
     }
     
@@ -93,3 +94,34 @@ extension MainViewController: UITableViewDelegate {
     }
     
 }
+
+extension MainViewController: ExerciseHeaderViewDelegate {
+    
+    internal func addSetFor(_ section: Int) {
+        let navView = navigationController?.view
+        
+        fadeView = UIView(frame: view.bounds)
+        fadeView?.backgroundColor = UIColor.fadeGray
+        navView?.addSubview(fadeView!)
+        
+        let addView: AddSetView = AddSetView.initFromNib()
+        addView.titleLabel.text = "Set #\(viewModel.exerciseFor(section).sets.count+1)"
+        addView.section = section
+        addView.delegate = self
+        addView.showOn(navView!)
+    }
+}
+
+extension MainViewController: AddSetViewDelegate {
+    
+    func cancel() {
+        fadeView?.close()
+    }
+    
+    func added(_ section: Int, type: Int) {
+        fadeView?.close()
+        viewModel.addNewSet(section, type: type)
+    }
+    
+}
+

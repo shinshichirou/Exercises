@@ -43,8 +43,9 @@ final class Storage {
         }
     }
     
-    static func addNewSetTo(_ exercise: Exercise, completion: Completion) {
+    static func addNewSetTo(_ exercise: Exercise, with type: Int, completion: Completion) {
         let newSet = ExerciseSet()
+        newSet.type = type
         store.write({
             exercise.sets.append(newSet)
         }) { (writeError) in

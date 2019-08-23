@@ -46,6 +46,12 @@ extension UIView {
     
     // MARK: -
     
+    class func initFromNib<T: UIView>() -> T {
+        return Bundle.main.loadNibNamed(String(describing: self), owner: nil, options: nil)?[0] as! T
+    }
+    
+    // MARK: -
+    
     func show() {
         if self.alpha == 1.0 {
             return

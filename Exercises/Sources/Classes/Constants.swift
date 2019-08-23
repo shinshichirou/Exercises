@@ -14,9 +14,9 @@ let kDefaultAnimationDuration = 0.3
 
 // MARAK: - Enums
 
-enum SetType: Int {
-    case regular = 0
-    case warmup = 1
+enum SetType {
+    static let regular = 0
+    static let warmup = 1
 }
 
 enum Storyboards {
