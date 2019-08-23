@@ -49,6 +49,17 @@ class MainViewController: UIViewController {
             }
         }
         
+        viewModel.deleteRowCallback = { [weak self] (indexPath) in
+            main {
+                self?.tableView.deleteRows(at: [indexPath], with: .automatic)
+                self?.tableView.reloadSections(IndexSet(integer: indexPath.section), with: .automatic)
+            }
+        }
+        
+        viewModel.editRowCallback = { [weak self] in
+            self?.tableView.reloadData()
+        }
+        
     }
     
     private func registerHeader() {
@@ -93,6 +104,28 @@ extension MainViewController: UITableViewDelegate {
         return kDefaultTableCellHeight
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            viewModel.deleteSet(indexPath: indexPath)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let navView = navigationController?.view
+        
+        fadeView = UIView(frame: view.bounds)
+        fadeView?.backgroundColor = UIColor.fadeGray
+        navView?.addSubview(fadeView!)
+        
+        let addView: AddSetView = AddSetView.initFromNib()
+        addView.isEditing = true
+        addView.titleLabel.text = "Set #\(indexPath.row+1)"
+        addView.section = indexPath.section
+        addView.row = indexPath.row
+        addView.typeControl.selectedSegmentIndex = viewModel.setFor(indexPath).type
+        addView.delegate = self
+        addView.showOn(navView!)
+    }
 }
 
 extension MainViewController: ExerciseHeaderViewDelegate {
@@ -121,6 +154,11 @@ extension MainViewController: AddSetViewDelegate {
     func added(_ section: Int, type: Int) {
         fadeView?.close()
         viewModel.addNewSet(section, type: type)
+    }
+    
+    func edited(_ indexPath: IndexPath, type: Int) {
+        fadeView?.close()
+        viewModel.editSet(indexPath, type: type)
     }
     
 }

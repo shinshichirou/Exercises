@@ -63,6 +63,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="XnM-Il-aEG"/>
             <connections>
+                <outlet property="addButton" destination="tEu-RX-oQl" id="Mqa-x6-dFK"/>
                 <outlet property="titleLabel" destination="hiJ-gy-EZy" id="Kok-wl-PaF"/>
                 <outlet property="typeControl" destination="GF7-ZL-LUM" id="y5p-lA-Cnx"/>
             </connections>
