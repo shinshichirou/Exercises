@@ -3,25 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95AE7F7119CA3547E47AD564 /* Pods_Exercises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC49E11FF096CB651451C50 /* Pods_Exercises.framework */; };
 		F47C817B230FE369007E40D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C817A230FE369007E40D8 /* AppDelegate.swift */; };
-		F47C817D230FE369007E40D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C817C230FE369007E40D8 /* ViewController.swift */; };
 		F47C8180230FE369007E40D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47C817E230FE369007E40D8 /* Main.storyboard */; };
 		F47C8182230FE369007E40D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47C8181230FE369007E40D8 /* Assets.xcassets */; };
 		F47C8185230FE369007E40D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47C8183230FE369007E40D8 /* LaunchScreen.storyboard */; };
+		F47C8195230FE552007E40D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C8194230FE552007E40D8 /* Constants.swift */; };
+		F47C8197230FE806007E40D8 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C8196230FE806007E40D8 /* Exercise.swift */; };
+		F47C8199230FF1B7007E40D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C8198230FF1B7007E40D8 /* MainViewController.swift */; };
+		F47C819F230FF559007E40D8 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C819E230FF559007E40D8 /* SetTableViewCell.swift */; };
+		F47C81A1230FF581007E40D8 /* ExerciseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81A0230FF581007E40D8 /* ExerciseHeaderView.swift */; };
+		F47C81A4230FF67E007E40D8 /* ExerciseHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47C81A3230FF67E007E40D8 /* ExerciseHeaderView.xib */; };
+		F47C81A6230FFA68007E40D8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81A5230FFA68007E40D8 /* MainViewModel.swift */; };
+		F47C81A9230FFB67007E40D8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81A8230FFB67007E40D8 /* UIColorExtension.swift */; };
+		F47C81AD230FFD47007E40D8 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81AC230FFD47007E40D8 /* Storage.swift */; };
+		F47C81AF231001A1007E40D8 /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81AE231001A1007E40D8 /* ExerciseSet.swift */; };
+		F47C81B1231002A1007E40D8 /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81B0231002A1007E40D8 /* RealmExtension.swift */; };
+		F47C81B523100A17007E40D8 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81B423100A16007E40D8 /* UITableViewExtension.swift */; };
+		F47C81B723100AD1007E40D8 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81B623100AD1007E40D8 /* NSObjectExtension.swift */; };
+		F47C81B9231010FC007E40D8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81B8231010FC007E40D8 /* RootViewController.swift */; };
+		F47C81BB2310116A007E40D8 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81BA2310116A007E40D8 /* StoryboardExtension.swift */; };
+		F47C81BF231015BF007E40D8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C81BE231015BF007E40D8 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B48F31708969D1E138F9F30C /* Pods-Exercises.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercises.release.xcconfig"; path = "Target Support Files/Pods-Exercises/Pods-Exercises.release.xcconfig"; sourceTree = "<group>"; };
+		BBC49E11FF096CB651451C50 /* Pods_Exercises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exercises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47C8177230FE369007E40D8 /* Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47C817A230FE369007E40D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F47C817C230FE369007E40D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F47C817F230FE369007E40D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47C8181230FE369007E40D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47C8184230FE369007E40D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47C8186230FE369007E40D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47C8194230FE552007E40D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F47C8196230FE806007E40D8 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		F47C8198230FF1B7007E40D8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F47C819E230FF559007E40D8 /* SetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
+		F47C81A0230FF581007E40D8 /* ExerciseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHeaderView.swift; sourceTree = "<group>"; };
+		F47C81A3230FF67E007E40D8 /* ExerciseHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseHeaderView.xib; sourceTree = "<group>"; };
+		F47C81A5230FFA68007E40D8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F47C81A8230FFB67007E40D8 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F47C81AC230FFD47007E40D8 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		F47C81AE231001A1007E40D8 /* ExerciseSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSet.swift; sourceTree = "<group>"; };
+		F47C81B0231002A1007E40D8 /* RealmExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtension.swift; sourceTree = "<group>"; };
+		F47C81B423100A16007E40D8 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		F47C81B623100AD1007E40D8 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		F47C81B8231010FC007E40D8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F47C81BA2310116A007E40D8 /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		F47C81BE231015BF007E40D8 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		F73F95865E71FDDC66F05027 /* Pods-Exercises.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercises.debug.xcconfig"; path = "Target Support Files/Pods-Exercises/Pods-Exercises.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AE7F7119CA3547E47AD564 /* Pods_Exercises.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		881CF525DDC211FEDE6E5AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBC49E11FF096CB651451C50 /* Pods_Exercises.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3321E0ED006DB7414B86E7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F73F95865E71FDDC66F05027 /* Pods-Exercises.debug.xcconfig */,
+				B48F31708969D1E138F9F30C /* Pods-Exercises.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F47C816E230FE369007E40D8 = {
 			isa = PBXGroup;
 			children = (
 				F47C8179230FE369007E40D8 /* Exercises */,
 				F47C8178230FE369007E40D8 /* Products */,
+				F3321E0ED006DB7414B86E7F /* Pods */,
+				881CF525DDC211FEDE6E5AC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +108,109 @@
 		F47C8179230FE369007E40D8 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				F47C817A230FE369007E40D8 /* AppDelegate.swift */,
-				F47C817C230FE369007E40D8 /* ViewController.swift */,
-				F47C817E230FE369007E40D8 /* Main.storyboard */,
-				F47C8181230FE369007E40D8 /* Assets.xcassets */,
-				F47C8183230FE369007E40D8 /* LaunchScreen.storyboard */,
-				F47C8186230FE369007E40D8 /* Info.plist */,
+				F47C818D230FE37A007E40D8 /* Sources */,
+				F47C818C230FE376007E40D8 /* Resources */,
 			);
 			path = Exercises;
+			sourceTree = "<group>";
+		};
+		F47C818C230FE376007E40D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F47C81A2230FF66A007E40D8 /* XIBs */,
+				F47C818E230FE397007E40D8 /* Storyboards */,
+				F47C8181230FE369007E40D8 /* Assets.xcassets */,
+				F47C8186230FE369007E40D8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F47C818D230FE37A007E40D8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F47C817A230FE369007E40D8 /* AppDelegate.swift */,
+				F47C818F230FE526007E40D8 /* ViewControllers */,
+				F47C8192230FE540007E40D8 /* ViewModels */,
+				F47C8190230FE531007E40D8 /* Views */,
+				F47C8191230FE538007E40D8 /* Models */,
+				F47C8193230FE546007E40D8 /* Classes */,
+				F47C81A7230FFB4C007E40D8 /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F47C818E230FE397007E40D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F47C817E230FE369007E40D8 /* Main.storyboard */,
+				F47C8183230FE369007E40D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F47C818F230FE526007E40D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F47C81B8231010FC007E40D8 /* RootViewController.swift */,
+				F47C8198230FF1B7007E40D8 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F47C8190230FE531007E40D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F47C819E230FF559007E40D8 /* SetTableViewCell.swift */,
+				F47C81A0230FF581007E40D8 /* ExerciseHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F47C8191230FE538007E40D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F47C8196230FE806007E40D8 /* Exercise.swift */,
+				F47C81AE231001A1007E40D8 /* ExerciseSet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F47C8192230FE540007E40D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F47C81A5230FFA68007E40D8 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F47C8193230FE546007E40D8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F47C8194230FE552007E40D8 /* Constants.swift */,
+				F47C81AC230FFD47007E40D8 /* Storage.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F47C81A2230FF66A007E40D8 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F47C81A3230FF67E007E40D8 /* ExerciseHeaderView.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		F47C81A7230FFB4C007E40D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F47C81B623100AD1007E40D8 /* NSObjectExtension.swift */,
+				F47C81A8230FFB67007E40D8 /* UIColorExtension.swift */,
+				F47C81BE231015BF007E40D8 /* UIViewExtension.swift */,
+				F47C81B423100A16007E40D8 /* UITableViewExtension.swift */,
+				F47C81BA2310116A007E40D8 /* StoryboardExtension.swift */,
+				F47C81B0231002A1007E40D8 /* RealmExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F47C8189230FE36A007E40D8 /* Build configuration list for PBXNativeTarget "Exercises" */;
 			buildPhases = (
+				475900408370A217BDC549CE /* [CP] Check Pods Manifest.lock */,
 				F47C8173230FE369007E40D8 /* Sources */,
 				F47C8174230FE369007E40D8 /* Frameworks */,
 				F47C8175230FE369007E40D8 /* Resources */,
+				1C747D6DCC963A044600A14C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +276,75 @@
 				F47C8185230FE369007E40D8 /* LaunchScreen.storyboard in Resources */,
 				F47C8182230FE369007E40D8 /* Assets.xcassets in Resources */,
 				F47C8180230FE369007E40D8 /* Main.storyboard in Resources */,
+				F47C81A4230FF67E007E40D8 /* ExerciseHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C747D6DCC963A044600A14C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exercises/Pods-Exercises-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exercises/Pods-Exercises-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Exercises/Pods-Exercises-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		475900408370A217BDC549CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Exercises-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F47C8173230FE369007E40D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47C817D230FE369007E40D8 /* ViewController.swift in Sources */,
+				F47C81AF231001A1007E40D8 /* ExerciseSet.swift in Sources */,
+				F47C81B723100AD1007E40D8 /* NSObjectExtension.swift in Sources */,
+				F47C81A6230FFA68007E40D8 /* MainViewModel.swift in Sources */,
+				F47C8197230FE806007E40D8 /* Exercise.swift in Sources */,
 				F47C817B230FE369007E40D8 /* AppDelegate.swift in Sources */,
+				F47C81A9230FFB67007E40D8 /* UIColorExtension.swift in Sources */,
+				F47C81BF231015BF007E40D8 /* UIViewExtension.swift in Sources */,
+				F47C819F230FF559007E40D8 /* SetTableViewCell.swift in Sources */,
+				F47C81A1230FF581007E40D8 /* ExerciseHeaderView.swift in Sources */,
+				F47C8195230FE552007E40D8 /* Constants.swift in Sources */,
+				F47C81B1231002A1007E40D8 /* RealmExtension.swift in Sources */,
+				F47C81B9231010FC007E40D8 /* RootViewController.swift in Sources */,
+				F47C8199230FF1B7007E40D8 /* MainViewController.swift in Sources */,
+				F47C81AD230FFD47007E40D8 /* Storage.swift in Sources */,
+				F47C81BB2310116A007E40D8 /* StoryboardExtension.swift in Sources */,
+				F47C81B523100A17007E40D8 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +488,12 @@
 		};
 		F47C818A230FE36A007E40D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73F95865E71FDDC66F05027 /* Pods-Exercises.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRCF49APML;
-				INFOPLIST_FILE = Exercises/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Exercises/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +507,12 @@
 		};
 		F47C818B230FE36A007E40D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48F31708969D1E138F9F30C /* Pods-Exercises.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRCF49APML;
-				INFOPLIST_FILE = Exercises/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Exercises/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

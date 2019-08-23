@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercises-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="Exercises" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ai-YS-XMf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SetTableViewCell" id="w8b-wE-JMn" customClass="SetTableViewCell" customModule="Exercises" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w8b-wE-JMn" id="1e0-1M-I22">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZj-gZ-nkW">
+                                                    <rect key="frame" x="20" y="14" width="16" height="16"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="6U3-g0-NfW"/>
+                                                        <constraint firstAttribute="width" constant="16" id="EkR-Q9-GMv"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gl-zO-pVy">
+                                                    <rect key="frame" x="56" y="11.5" width="338" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LZj-gZ-nkW" firstAttribute="centerY" secondItem="1e0-1M-I22" secondAttribute="centerY" id="4Kg-8H-uUd"/>
+                                                <constraint firstItem="1gl-zO-pVy" firstAttribute="leading" secondItem="LZj-gZ-nkW" secondAttribute="trailing" constant="20" id="J2w-Ug-jxO"/>
+                                                <constraint firstAttribute="trailing" secondItem="1gl-zO-pVy" secondAttribute="trailing" constant="20" id="V96-An-yLB"/>
+                                                <constraint firstItem="LZj-gZ-nkW" firstAttribute="leading" secondItem="1e0-1M-I22" secondAttribute="leading" constant="20" id="ZF6-Nt-n6K"/>
+                                                <constraint firstItem="1gl-zO-pVy" firstAttribute="centerY" secondItem="1e0-1M-I22" secondAttribute="centerY" id="bot-CK-qoZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bulletView" destination="LZj-gZ-nkW" id="KEW-9x-zH0"/>
+                                            <outlet property="nameLabel" destination="1gl-zO-pVy" id="TfV-Jm-X5f"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JOy-V3-yCl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8on-3O-ng2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9ai-YS-XMf" secondAttribute="trailing" id="Etz-ma-JKJ"/>
+                            <constraint firstAttribute="bottom" secondItem="9ai-YS-XMf" secondAttribute="bottom" id="cgu-7k-OtK"/>
+                            <constraint firstItem="9ai-YS-XMf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nCt-e3-ewC"/>
+                            <constraint firstItem="9ai-YS-XMf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wbm-Rf-Si3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exercises" id="Eri-rY-GNp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bW5-GT-Liw">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="ddC-9V-5EO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="bW5-GT-Liw" id="4cD-i5-UGq"/>
+                        <outlet property="tableView" destination="9ai-YS-XMf" id="4Z4-6J-gH8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="-356"/>
+        </scene>
+    </scenes>
+</document>

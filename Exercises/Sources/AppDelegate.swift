@@ -13,10 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        configureRoot()
+        Storage.shared.setup()
+        
         return true
+    }
+    
+    private func configureRoot() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = RootViewController()
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -44,3 +52,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    
+    static var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    var root: RootViewController {
+        return window!.rootViewController as! RootViewController
+    }
+    
+}

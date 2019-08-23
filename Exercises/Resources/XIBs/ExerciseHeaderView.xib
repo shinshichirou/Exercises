@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="flD-f5-k87" customClass="ExerciseHeaderView" customModule="Exercises" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-Ng-ROt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frh-md-Ggd">
+                            <rect key="frame" x="20" y="20.5" width="113.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o4-mf-hmp">
+                            <rect key="frame" x="293" y="16" width="62" height="30"/>
+                            <state key="normal" title="Add Sets"/>
+                            <connections>
+                                <action selector="addSetPressed:" destination="flD-f5-k87" eventType="touchUpInside" id="my1-DQ-uc0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97103707901554404" green="0.97103707901554404" blue="0.97103707901554404" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Frh-md-Ggd" firstAttribute="leading" secondItem="Y54-Fd-z53" secondAttribute="leading" constant="20" id="5AB-7G-KUl"/>
+                        <constraint firstItem="Frh-md-Ggd" firstAttribute="centerY" secondItem="9ka-Ng-ROt" secondAttribute="centerY" id="5Ul-kU-8mM"/>
+                        <constraint firstItem="Y54-Fd-z53" firstAttribute="trailing" secondItem="8o4-mf-hmp" secondAttribute="trailing" constant="20" id="DbQ-2L-xRp"/>
+                        <constraint firstItem="8o4-mf-hmp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Frh-md-Ggd" secondAttribute="trailing" constant="20" id="iEI-37-5zJ"/>
+                        <constraint firstItem="8o4-mf-hmp" firstAttribute="centerY" secondItem="9ka-Ng-ROt" secondAttribute="centerY" id="lke-im-Lla"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Y54-Fd-z53"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9ka-Ng-ROt" firstAttribute="top" secondItem="flD-f5-k87" secondAttribute="top" id="49q-ZU-mf2"/>
+                <constraint firstItem="9ka-Ng-ROt" firstAttribute="leading" secondItem="flD-f5-k87" secondAttribute="leading" id="5Xg-N4-9eC"/>
+                <constraint firstAttribute="bottom" secondItem="9ka-Ng-ROt" secondAttribute="bottom" id="eS1-DF-aRg"/>
+                <constraint firstAttribute="trailing" secondItem="9ka-Ng-ROt" secondAttribute="trailing" id="fbe-Rp-1uw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="YeY-Gx-RNF"/>
+            <connections>
+                <outlet property="addSetButton" destination="8o4-mf-hmp" id="zjR-Qf-1YG"/>
+                <outlet property="nameLabel" destination="Frh-md-Ggd" id="EE7-ld-g7T"/>
+            </connections>
+            <point key="canvasLocation" x="-487.19999999999999" y="-776.31184407796104"/>
+        </view>
+    </objects>
+</document>
